@@ -1,24 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-}
-
-@font-face {
-  font-family: 'NimbusSanNov-Lig';
-  src: url('fonts/26BCF6_0_0.eot');
-  src: url('fonts/26BCF6_0_0.eot?#iefix') format("embedded-opentype"), url('fonts/26BCF6_0_0.woff') format("woff"), url('fonts/26BCF6_0_0.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NimbusSanNov-Hea';
-  src: url('fonts/26BCF6_1_0.eot');
-  src: url('fonts/26BCF6_1_0.eot?#iefix') format("embedded-opentype"), url('fonts/26BCF6_1_0.woff') format("woff"), url('fonts/26BCF6_1_0.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 html,
@@ -31,7 +17,9 @@ body,
 body {
   -webkit-font-smoothing: antialiased;
   background: #f8f8f8;
-  font: normal 20px NimbusSanNov-Lig;
+  font-size: regular;
+  font-weight: 20px;
+  font-family: 'Noto Serif', serif;
   color: #1f1f1f;
   display: flex;
   align-items: center;
@@ -74,9 +62,9 @@ a:hover {
 
 /* Title */
 .title {
-  font-family: NimbusSanNov-Hea;
+  font-family: 'Merriweather', serif;
   font-size: 70px;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: -2px;
   line-height: 0.8;
   margin: 18px 0 25px;
@@ -95,7 +83,7 @@ a:hover {
 /* Description */
 .description {
   margin-bottom: 30px;
-  font-size: calc(30px + 1vw);
+  font-size: calc(26px + 1vw);
 }
 
 /* Contact */
@@ -126,6 +114,39 @@ a:hover {
   padding: 3px 0;
 }
 
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.project__item {
+  flex: 50%;
+}
+.project__image {
+  width: 100%;
+}
+.project__info {
+  margin: -7% 11% 50px;
+}
+.project__title {
+  font-family: 'Merriweather', serif;
+  margin-bottom: 10px;
+}
+.project__description {
+  margin-bottom: 10px;
+}
+.project__open-source {
+  font-size: 70%;
+}
+.project__tags li {
+  background: #ccc;
+  display: inline-block;
+  padding: 0 5px;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
 
 @media (max-width: 700px) {
   body {
@@ -133,7 +154,9 @@ a:hover {
     line-height: 1.3;
     
   }
-  main {
+  main,
+  .contact,
+  .projects {
     flex-direction: column;
   }
   .avatar {
@@ -145,6 +168,5 @@ a:hover {
   }
   .contact {
     margin-bottom: 30px;
-    flex-direction: column;
   }
 }
