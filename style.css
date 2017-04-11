@@ -55,6 +55,7 @@ a:hover {
   margin: auto;
   padding: 5%;
   display: flex;
+  max-width: 1780px;
 }
 .main--show {
   transform: translateY(0);
