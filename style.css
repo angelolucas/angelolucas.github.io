@@ -130,6 +130,12 @@ a:hover {
   border-radius: 3px;
 }
 
+@media (max-width: 1024px) {
+  .project__item {
+    flex: 50%;
+  }
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 18px;
