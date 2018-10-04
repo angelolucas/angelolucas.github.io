@@ -103,7 +103,7 @@ a:hover {
   width: 100%;
 }
 .project__item {
-  flex: 50%;
+  flex: 33%;
 }
 .project__image {
   width: 100%;
