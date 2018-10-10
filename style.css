@@ -80,10 +80,12 @@ a:hover {
 /* Social Media  */
 .social-media {
   display: flex;
+  flex-wrap: wrap;
 }
 .social-media__item {
   margin-right: 5%;
-  flex-grow: 1;
+  margin-bottom: 20px;
+  flex: 1 1 100px;
   font-size: calc(16px + 1vw);
 }
 .social-media__item:last-child {
