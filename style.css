@@ -29,17 +29,6 @@ a:hover {
   color: white;
 }
 
-/* Fade  */
-.fade {
-  transform: translateY(-20px);
-  transition: 1s;
-  opacity: 0;
-}
-.fade--in {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 /* Main */
 .main {
   margin: auto;
