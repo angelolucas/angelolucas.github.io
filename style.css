@@ -14,7 +14,7 @@ body {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background: #383838;
+  background: #3f4245;
   font-size: regular;
   font-weight: 20px;
   font-family: "Noto Serif", serif;
@@ -30,10 +30,13 @@ a:hover {
 }
 
 /* Main */
-.main {
+.about-me {
   margin: auto;
   padding: 5%;
-  max-width: 1780px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Title */
@@ -49,45 +52,35 @@ a:hover {
 
 /* Description */
 .description {
-  margin-bottom: 60px;
   font-size: calc(14px + 1vw);
   max-width: 790px;
 }
+.description p {
+  margin-bottom: 40px;
+}
 .project__description a {
   text-decoration: underline;
-}
-
-/* Contact */
-.contact {
-  margin-bottom: 80px;
-  display: flex;
-  font-size: calc(16px + 1vw);
-}
-.contact__item {
-  margin-right: 5%;
 }
 
 /* Social Media  */
 .social-media {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
 }
 .social-media__item {
-  margin-right: 5%;
-  margin-bottom: 20px;
-  flex: 1 1 100px;
-  font-size: calc(16px + 1vw);
+  display: block;
+  padding: 3px 0;
+}
+.social-media__item img {
+  width: 30px;
 }
 .social-media__item:last-child {
   margin-right: 0;
 }
-.social-media__item a {
-  border-top: 1px solid #202020;
-  display: block;
-  padding: 3px 0;
-}
 
-.social-media__item a:hover {
+.social-media__item:hover {
   border-color: white;
 }
 
