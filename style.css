@@ -50,7 +50,8 @@ a:hover {
 /* Description */
 .description {
   margin-bottom: 60px;
-  font-size: calc(16px + 1vw);
+  font-size: calc(14px + 1vw);
+  max-width: 790px;
 }
 .project__description a {
   text-decoration: underline;
