@@ -14,14 +14,14 @@ body {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background: #3f4245;
+  background: #e8e8e9;
   font-size: regular;
   font-weight: 20px;
   font-family: "Noto Serif", serif;
-  color: #faf8ff;
+  color: #35383c;
 }
 a {
-  color: #faf8ff;
+  color: #35383c;
   text-decoration: none;
 }
 a:hover {
@@ -32,8 +32,8 @@ a:hover {
 /* Main */
 .about-me {
   margin: auto;
-  padding: 5%;
-  min-height: 100vh;
+  padding: 5vw;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -86,9 +86,17 @@ a:hover {
 
 /* Projects */
 .projects {
+  box-shadow: 0px 0px 0px 2px #35383c;
+  border-top: 2px solid white;
+  background: #35383c;
+  color: #e8e8e9;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 5vw;
+}
+.projects a {
+  color: #e8e8e9;
 }
 .project__item {
   flex: 33%;
