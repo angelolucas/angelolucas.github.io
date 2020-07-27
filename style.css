@@ -147,10 +147,6 @@ a:hover {
     flex-direction: column;
     overflow: hidden;
   }
-  .project__image {
-    width: 106%;
-    margin-left: -3%;
-  }
   .project__info {
     margin: -9% 8% 50px;
   }
