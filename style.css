@@ -52,7 +52,7 @@ a:hover {
 }
 .about-me__description {
   font-size: calc(14px + 1vw);
-  max-width: 790px;
+  max-width: 900px;
 }
 .about-me__description p {
   margin-bottom: 40px;
