@@ -52,7 +52,7 @@ a:hover {
   position: relative;
 }
 .about-me__description {
-  font-size: calc(14px + 1vw);
+  font-size: calc(20px + 0.6vw);
   max-width: 900px;
 }
 .about-me__description p {
