@@ -13,6 +13,42 @@
       content="I'm a front-end developer. I create projects based in HTML, CSS and JavaScript for both mobile and desktop, and my main goal for each new project is to deliver the best experience possible for the user."
     />
     <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "982152406375915");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=982152406375915&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <header class="about-me">
@@ -25,7 +61,11 @@
         <h1 class="about-me__title">Ângelo Lucas</h1>
         <div class="about-me__description">
           <p>
-            10 years of experience with software development. Focused on delivering projects with the best user experience. Past Life includes development of computer vision tools for Appen; Design System for CNP Assurances; HBO and Eurosport projects for Huge; Fiat Social Drive, and Brastemp You for Isobar.
+            10 years of experience with software development. Focused on
+            delivering projects with the best user experience. Past Life
+            includes development of computer vision tools for Appen; Design
+            System for CNP Assurances; HBO and Eurosport projects for Huge; Fiat
+            Social Drive, and Brastemp You for Isobar.
           </p>
           <p>angelo.lrc@gmail.com</p>
         </div>
